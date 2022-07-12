@@ -8,7 +8,7 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8]
 function cardInnerHtml() {
   // вставляю числа в карточки и вывожу их в html
   numbers.forEach((item) => document.querySelector('.game-card').insertAdjacentHTML('afterbegin', `        
-  <div data-id="${item}" class="card flip">
+  <div data-id="${item}" class="card">
       <span class="front">${item}</span>
       <img class="back" src="./img/geo.png" alt="">
   </div>`))
