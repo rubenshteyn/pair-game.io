@@ -1,0 +1,123 @@
+body {
+  font-family: "Eb", sans-serif;
+  height: 100vh;
+  display: flex;
+  background-color: #000;
+}
+
+h1 {
+  text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 60px #0000ff, 0 0 80px #0000ff, 0 0 90px #0000ff;
+}
+
+.description {
+  position: absolute;
+  top: 12rem;
+  margin: 0 auto;
+  left: 2rem;
+  right: 0;
+  color: #fff;
+}
+
+.description a {
+  display: block;
+  width: 220px;
+  text-decoration: none;
+}
+
+.description img {
+  width: auto;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.description a:hover img {
+  opacity: 1;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+
+.card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.card.flip {
+  transform: rotateY(180deg);
+}
+
+.game-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 164px;
+  right: 0;
+  width: 480px;
+  height: 415px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  backface-visibility: hidden;
+  box-shadow: 0px 0px 8px #9191ff; -webkit-box-shadow: 0px 0px 8px #9191ff; box-shadow: 0px 0px 8px #9191ff;
+}
+
+.back {
+  cursor: pointer;
+}
+
+.front {
+  display: block;
+  border: 1px solid #fff;
+  text-align: center;
+  font-size: 6vw;
+  color: #f0f0f0;
+  transform: rotateY(180deg);
+}
+
+.btn {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 0px;
+  border: 3px solid #fff;
+  background-color: unset;
+  position: absolute;
+  width: 20%;
+  margin: 0 auto;
+  left: -100rem;
+  right: 0;
+  bottom: 29px;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+  cursor: pointer;
+  text-shadow: 0 0 5px #ffffff, 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #0000ff, 0 0 40px #0000ff, 0 0 60px #0000ff, 0 0 80px #0000ff, 0 0 90px #0000ff;
+  -moz-box-shadow: 0px 0px 14px #9191ff; -webkit-box-shadow: 0px 0px 14px #9191ff; box-shadow: 0px 0px 14px #9191ff;
+  box-shadow: 0px 0px 14px #9191ff; -webkit-box-shadow: 0px 0px 14px #9191ff; box-shadow: 0px 0px 14px #9191ff;
+}
+
+.opacity {
+  left: 0;
+  opacity: 1;
+}
