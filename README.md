@@ -1,2 +1,2 @@
-# pair-game.io - pair game
-# the first game I wrote in javascript and came up with a minimalistic layout design
+# Игра в пары
+# Это мой старый мини пет-проект, на котором я оттачивал свои знания HTML\CSS\JS
